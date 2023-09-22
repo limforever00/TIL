@@ -2,7 +2,7 @@
 
 ## 1. Django 시작할 폴더 생성
 
-> 나만의 가상환경 생성하기
+> 나만의 가상환경 생성하기  
 > CMD에서 Django 시작할 파일로 이동해 아래 명령어 실행
 ```
 python -m venv myvenv
