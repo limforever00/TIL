@@ -49,15 +49,27 @@ python manage.py makemigrations
 python manage.py migrate
 ```
   - 이후 위 명령어를 입력하면 정상 적용되었을시 아래처럼 0001_initial...OK 출력
+   
   ![Alt text](img/migrate.png)
 ### 모델 추가하기
   - Admin.py에 가보면 #Register your models here이라는 메세지를 확인 가능  
+  - 아까 만들었던 Photo라는 모델을 import 해준 후에 Photo 모델을 등록  
+  
   ![Alt text](img/model_py.png)
-  - 아까 만들었던 Photo라는 모델을 import 해준 후에 Photo 모델을 등록
 
+  - 서버 시작한 후에 admin page 들어가보면 PHOTO 확인 가능
+  - photos를 클릭하여 이동한 후 오른쪽 위의 ADD PHOTO 클릭
+  - 이전에 Model에서 정의한 사진모델을 확인 가능 (Title, Author, image, Desc, Price)  
+
+  ![Alt text](img/addPhoto.png)
 
 2. Template
-  - 사용자에게 보이는 부분 담당
+  - 사용자에게 보이는 부분 담당 (HTML)
+  - Django의 템플릿은 일반적 HTML과 99% 동일, 한가지 다른점은 탬플릿 태그
+  - 탬플릿 태그는 HTML이 Python코드에서 데이터를 바로 입력받아 처리할 수 있는 도구
+  - HTML만으로는 데이터를 제어할수 없어 js, jquery등을 사용해야하는데 Django에서는 바로 처리 가능
+  - {} 중괄호 안에 작성, 안에 들어가는 내용은 데이터, for, if등의 구문도 가능
 
 3. View
   - Model과 Template의 사이에서 데이터를 전달하고 Template에서 발생하는 이벤트 처리
+  - 코드에서 제일 많은 비중을 차지함
