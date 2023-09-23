@@ -49,10 +49,13 @@ python manage.py makemigrations
 python manage.py migrate
 ```
   - 이후 위 명령어를 입력하면 정상 적용되었을시 아래처럼 0001_initial...OK 출력
+   
   ![Alt text](img/migrate.png)
+  
 ### 모델 추가하기
   - Admin.py에 가보면 #Register your models here이라는 메세지를 확인 가능  
   - 아까 만들었던 Photo라는 모델을 import 해준 후에 Photo 모델을 등록  
+  
   ![Alt text](img/model_py.png)
 
   - 서버 시작한 후에 admin page 들어가보면 PHOTO 확인 가능
