@@ -73,3 +73,4 @@ python manage.py runserver
 ### 3. urls.py
    - 프로젝트의 url주소를 등록해놓은 파일
    - 내부의 path()를 사용하여 원하는 주소를 등록
+   - 전체 url관리용, app관리용 등으로 세분하여 사용하면 편리
