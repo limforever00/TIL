@@ -16,7 +16,7 @@ myvenv\Scripts\activate 실행
 
 > 활성화 되었는지 확인
 ```
-(myvenv) C:\django> 처럼 앞에 가상환경명이 붙었으면 설정 완료
+(myvenv) C:\django> 처럼 앞에 가상 환경명이 붙었으면 설정 완료
 ```
 
 > DJango 설치
