@@ -10,13 +10,18 @@ python -m venv myvenv
 
 > 생성한 myvenv를 활성화
 ```
-myvenv\Scripts\activate 실행
+.\myvenv\Scripts\activate 실행
 (생성한 가상환경명)
 ```
 
 > 활성화 되었는지 확인
 ```
 (myvenv) C:\django> 처럼 앞에 가상 환경명이 붙었으면 설정 완료
+```
+
+> 비활성화 명령어
+```
+(myvenv) C:\django>dactivate
 ```
 
 > DJango 설치
@@ -70,7 +75,9 @@ python manage.py runserver
         > INSTALLED_APPS = [...]  
         > 설치된 앱들을 등록하는 옵션, 새 프로젝트를 추가했을때 이곳에 선언해주어야 정상 적용  
 
+
 ### 3. urls.py
    - 프로젝트의 url주소를 등록해놓은 파일
    - 내부의 path()를 사용하여 원하는 주소를 등록
-   - 전체 url관리용, app관리용 등으로 세분하여 사용하면 편리
+   - 전체 url관리용, app관리용 등으로 세분하여 사용하면 편리  
+   ![Alt text](img/urls.png)
