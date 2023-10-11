@@ -1,4 +1,4 @@
-# Django 혼자 시작해보기(window) day 2
+# Django 시작해보기(window) day 2
 
 ## 1. MTV 패턴 알아보기
 

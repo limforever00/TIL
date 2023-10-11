@@ -1,4 +1,4 @@
-# Django 혼자 시작해보기(window) day 1
+# Django 시작해보기(window) day 1
 
 ## 1. Django 시작할 폴더 생성
 
