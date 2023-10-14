@@ -149,3 +149,7 @@ book_app 아래에 있는 urls.py를 열어 urlpatterns 변수에  추가
 path('book_list/', views.book_list, name='book_list' ),
 ```
 ![Alt text](img/url_add_booklist.png)
+
+> 정상적으로 데이터 조회하는지 test
+![Alt text](img/book_list.png)
+
