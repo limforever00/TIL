@@ -13,8 +13,74 @@ git config --global user.name
 
 ## 명령어
 
+git init -> 현재 폴더를 repository지정 (관리를 시작)
+이후
+ls - a
+.git 확인 가능
+
+rm -rf .git reposiroty 해제
+
+git log --oneline 히스토리 목록과 코드 확인
+
+git checkout (코드) 해당 시점으로 이동
+
+git checkout master 다시 돌아오기
+
 - commit 목록에 추가하기 위해 파일을 추가해주는 커맨드
 ```
 git add (파일명)
 git add . | git add * : 수정된 파일 전체 add
 ```
+
+원격 저장소 확인
+$ git remote -v
+
+원격 저장소 추가
+$ git remote add origin 링크
+
+$ git remote -v
+origin  https://github.com/limforever00/test_project.git (fetch)
+origin  https://github.com/limforever00/test_project.git (push)
+
+origin : 원격 저장소명
+
+$ git push -u origin master 
+master branch를 원격저장소에 추가(브랜치별로 추가)
+
+git 홈페이지에서 파일 만든후  ->
+pull을 사용해서 업데이트
+$git pull origin master
+
+
+git에서 내컴퓨터로 con
+git remote add origin https://github.com/limforever00/limforever00.github.io
+
+다음은 브랜치에서 master 브랜치로 변경사항을 병합하는 일반적인 절차입니다:
+
+현재 작업 중인 브랜치에서 변경사항을 커밋합니다:
+
+git add .
+git commit -m "변경 사항 설명"
+master 브랜치로 이동합니다:
+
+git checkout master
+master 브랜치를 업데이트합니다:
+
+bash
+Copy code
+git pull origin master
+이제 다른 브랜치에서 작업한 변경 사항을 master 브랜치로 병합합니다:
+
+bash
+Copy code
+git merge 브랜치_이름
+여기서 브랜치_이름은 다른 브랜치의 이름입니다.
+
+병합이 완료되고 충돌이 없다면, 변경 사항을 원격 저장소로 푸시합니다:
+
+bash
+Copy code
+git push origin master
+이제 변경 사항이 master 브랜치로 푸시되었고, 원격 저장소와 로컬 저장소의 master 브랜치는 동일한 상태가 됩니다. 
+이런 방식으로 변경사항을 병합하고 푸시하면 협업 과정에서 코드 충돌을 방지하고 정확한 변경사항을 원격 저장소로 업로드할 수 있습니다.
+
