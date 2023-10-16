@@ -84,3 +84,30 @@ git push origin master
 이제 변경 사항이 master 브랜치로 푸시되었고, 원격 저장소와 로컬 저장소의 master 브랜치는 동일한 상태가 됩니다. 
 이런 방식으로 변경사항을 병합하고 푸시하면 협업 과정에서 코드 충돌을 방지하고 정확한 변경사항을 원격 저장소로 업로드할 수 있습니다.
 
+------------------------------------------------------------
+다른 사람이 올린 branch 가져와서 master에 적용하기까지 단계별 정리
+
+1. 원격 브랜치 목록 확인
+git fetch origin 위 명령어로 원격저장소 origin의 브랜치 정보를 가져옴
+
+2. git branch -r
+가져온 branch 목록 확인
+
+3. 다른 사람이 푸시한 원격 브랜치를 로컬로 체크아웃
+git checkout -b 로컬_브랜치_이름 origin/<원격 브랜치 이름>
+
+여기서 작업후 이상이 없음을 확인하면 master branch로 merge작업 진행
+
+4. 이상없음 확인후 add && commit 진행
+
+5. master로 이동
+   git checkout master
+
+6. master 브랜치 업데이트
+   git pull origin master
+
+7. 다른 브랜치에서 작업한 사항을 mater로 병합
+   git merge 브랜치명
+
+8. 병합 완료후 정상작동 확인하고 원격저장소로 push
+   git push origin master
